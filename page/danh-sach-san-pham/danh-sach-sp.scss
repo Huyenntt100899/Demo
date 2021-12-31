@@ -1,0 +1,90 @@
+@import "../../assets/styles/main";
+
+// header
+
+// .header {
+//   .navbar-nav {
+//     > li.border-bottom {
+//       > a {
+//         border-bottom: 2px solid #0e528b;
+
+//         @media screen and (max-width: 991px) {
+//           border-bottom: solid 1px #eee;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.row {
+  .prcate-body {
+    width: 100%;
+    float: left;
+    padding-top: 55px;
+
+    .title-prcate {
+      border-bottom: 1px solid #333;
+
+      .submenu {
+        padding: 5px;
+        line-height: 60px;
+        font-size: 15px;
+      }
+    }
+
+    a {
+      &:hover {
+        text-decoration: none;
+        color: #1d5fcb;
+      }
+    }
+
+    .detail-prcate,
+    .title-prcate {
+      width: 100%;
+      padding: 0;
+      float: left;
+
+      a.submenu.active {
+        color: #df6a0e;
+      }
+    }
+
+    .item-product {
+      margin: 0 0 20px;
+      height: 210px;
+      padding: 0 0 0 15px;
+
+      .detail-prd {
+        background: #fff;
+        height: 215px;
+        width: 100%;
+        float: left;
+        padding-top: 25px;
+      }
+
+      img {
+        margin: 0 auto;
+        transition: all 1s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .car-name {
+        font-size: 15px;
+        font-family: ModernHBold;
+        color: #333;
+        margin-top: -10px;
+      }
+    }
+  }
+  .container {
+    padding: 0;
+
+    @media screen and (min-width: $minlg) {
+      padding: 0;
+      width: 970px;
+    }
+  }
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+
+  <!-- <link rel="stylesheet" href="../../assets/styles/_main.css"> -->
+  <link rel="stylesheet" href="../../components/Header/Header.css">
+  <link rel="stylesheet" href="../../components/GroupIcon/GroupIcon.css">
+  <link rel="stylesheet" href="../../components/MakeRegist/MakeRegist.css">
+  <link rel="stylesheet" href="../../components/Regist/Regist.css">
+  <link rel="stylesheet" href="../../components/footer/footer.css">
+  <link rel="stylesheet" href="./danh-sach-sp.css">
+  <title>San-pham</title>
+</head>
+
+<body>
+  <nav class="header navbar navbar-default">
+
+    <!-- Menu-mobile -->
+    <div class="navbar-header">
+      <button class="navbar-toggle" onclick="activeMenu(this)">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse header-menu">
+
+      <div class="container" style="width: 95%">
+
+        <ul class="nav navbar-nav header-nav" id="nav">
+          <li class="logo-1">
+            <a href="../../index.html" class="hidden-xs modernHBold">
+              <img src="../../assets/images/header-logo/hyundai-logo.png" alt="" class="img-responsive">
+            </a>
+          </li>
+          <li class="">
+            <a href="" class="modernHBold">
+              Giới thiệu
+            </a>
+          </li>
+          <li class="dropdown border-bottom">
+            <a href="./xe-du-lich.html" class="modernHBold">
+              Sản phẩm
+            </a>
+            <span class="dropdown-toggle hidden-md hidden-lg has-subnav" data-toggle="dropdown">▼</span>
+            <ul class="dropdown-menu">
+              <li><a href="./xe-du-lich.html">Xe du lịch</a></li>
+              <li><a href="./Xe-SUV.html">Xe SUV</a></li>
+              <li><a href="">test001</a></li>
+              <li><a href="./xe-thuong-mai.html">Xe thương mại</a></li>
+              <li><a href="./limousine-an-phu.html">Limousine An Phú</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="../News/tin-tuc.html" class="modernHBold">
+              Tin tức
+            </a>
+            <span class="dropdown-toggle hidden-md hidden-lg has-subnav" data-toggle="dropdown">▼</span>
+            <ul class="dropdown-menu">
+              <li><a href="">Tin khuyến mãi</a></li>
+              <li><a href="">Khuyến mãi 12</a></li>
+              <li><a href="">Danh mục mới 123</a></li>
+              <li><a href="">Danh mục mới 123</a></li>
+              <li><a href="">Danh mục mới 1256</a></li>
+              <li><a href="">Danh mục mới 123456</a></li>
+              <li><a href="../News/tin-tuc.html">Tin tức chung</a></li>
+              <li><a href="">tintuc</a></li>
+              <li><a href="">Tin dịch vụ</a></li>
+              <li><a href="">Tin tuyển dụng</a></li>
+              <li><a href="">Hỏi đáp</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="" class="modernHBold">
+              Dịch vụ
+            </a>
+            <span class="dropdown-toggle hidden-md hidden-lg has-subnav" data-toggle="dropdown">▼</span>
+            <ul class="dropdown-menu">
+              <li><a href="">Chăm sóc khách hàng</a></li>
+              <li><a href="">Chính sách bảo hành</a></li>
+              <li><a href="">Bảo dưỡng định kỳ</a></li>
+              <li><a href="">Phụ tùng & phụ kiện</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="" class="modernHBold">
+              Đăng ký lái thử
+            </a>
+            <span class="dropdown-toggle hidden-md hidden-lg has-subnav" data-toggle="dropdown">▼</span>
+            <ul class="dropdown-menu">
+              <li><a href="">Đăng ký lái thử</a></li>
+              <li><a href="">Đặt lịch bảo dưỡng</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="" class="modernHBold">
+              Mua xe
+            </a>
+            <span class="dropdown-toggle hidden-md hidden-lg has-subnav" data-toggle="dropdown">▼</span>
+            <ul class="dropdown-menu">
+              <li><a href="">Bảng giá</a></li>
+              <li><a href="">Dự toán phí</a></li>
+              <li><a href="">Hỗ trợ trả góp</a></li>
+              <li><a href="">Hướng dẫn thủ tục</a></li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="../lien-he/lien-he.html" class="modernHBold">
+              Liên hệ
+            </a>
+          </li>
+          <li class="logo-2">
+            <a href="" class="modernHBold">
+              <img src="../../assets/images/header-logo/daily-logo.png" alt="" class="img-responsive">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Group Icon -->
+  <div class="group-icon">
+    <div class="icon">
+      <a href="">
+        <img src="../../assets/images/group-icon/youtube.svg" alt="" class="img-reaponsive">
+      </a>
+    </div>
+
+    <div class="icon">
+      <a href="">
+        <img src="../../assets/images/group-icon/facebook.svg" alt="" class="img-reaponsive">
+      </a>
+    </div>
+  </div>
+
+  <!-- Make Regist -->
+  <div class="make-regist">
+    <div class="regist">
+      <a href="">Đăng ký lái thử</a>
+    </div>
+    <div class="make-app">
+      <a href="">Đặt lịch bảo dưỡng</a>
+    </div>
+  </div>
+
+  <!--xe-du-lich-->
+  <div class="row no-margin">
+    <div class="container">
+      <div class="prcate-body">
+        <div class="title-prcate">
+          <a href="./xe-du-lich.html" class="col-md-3 col-xs-6 submenu active">
+            <img src="../../assets/images/san-pham/pro-cate-1.png" alt="">
+            Xe du lịch
+          </a>
+          <a href="./Xe-SUV.html" class="col-md-3 col-xs-6 submenu">
+            <img src="../../assets/images/san-pham/pro-cate-1.png" alt="">
+            Xe SUV
+          </a>
+          <a href="" class="col-md-3 col-xs-6 submenu">
+            <img src="../../assets/images/san-pham/pro-cate-1.png" alt="">
+            test001
+          </a>
+          <a href="./xe-thuong-mai.html" class="col-md-3 col-xs-6 submenu">
+            <img src="../../assets/images/san-pham/pro-cate-1.png" alt="">
+            Xe thương mại
+          </a>
+          <a href="./limousine-an-phu.html" class="col-md-3 col-xs-6 submenu">
+            <img src="../../assets/images/san-pham/pro-cate-1.png" alt="">
+            Limousine An Phú
+          </a>
+        </div>
+        <div class="detail-prcate">
+          <div class="col-md-3 col-xs-6 item-product">
+            <div class="detail-prd text-align">
+              <a href="">
+                <img src="../../assets/images/san-pham/xe-du-lich/grand-i10.png" alt="" class="img-responsive">
+                <span class="car-name">Grand i10</span>
+                </img>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6 item-product">
+            <div class="detail-prd text-align">
+              <a href="">
+                <img src="../../assets/images/san-pham/xe-du-lich/grand-i10-sedan.png" alt="" class="img-responsive">
+                <span class="car-name">Grand i10 sedan</span>
+                </img>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6 item-product">
+            <div class="detail-prd text-align">
+              <a href="">
+                <img src="../../assets/images/san-pham/xe-du-lich/elantra.png" alt="" class="img-responsive">
+                <span class="car-name">Elantra</span>
+                </img>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6 item-product">
+            <div class="detail-prd text-align">
+              <a href="">
+                <img src="../../assets/images/san-pham/xe-du-lich/Elantra-Sport.png" alt="" class="img-responsive">
+                <span class="car-name">Elantra Sport</span>
+                </img>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6 item-product">
+            <div class="detail-prd text-align">
+              <a href="">
+                <img src="../../assets/images/san-pham/xe-du-lich/accent.png" alt="" class="img-responsive">
+                <span class="car-name">Accent</span>
+                </img>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6 item-product">
+            <div class="detail-prd text-align">
+              <a href="">
+                <img src="../../assets/images/san-pham/xe-du-lich/ANHDAIDIEN-Lamborghini-Huracan_EVO-.png" alt=""
+                  class="img-responsive">
+                <span class="car-name">Lamborghini</span>
+                </img>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6 item-product">
+            <div class="detail-prd text-align">
+              <a href="">
+                <img src="../../assets/images/san-pham/xe-du-lich/Elantra_2019.png" alt="" class="img-responsive"
+                  style="height: 95%;">
+                <span class="car-name">Elantra 2019</span>
+                </img>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Regist -->
+  <div class="container regist-new">
+    <div class="col-xs-12 text-align">
+      <span class="title-email">Đăng ký để nhận tin từ Hyundai An Phú</span>
+      <span>
+        <input type="text" placeholder="Nhập địa chỉ email">
+        <button>Gửi</button>
+      </span>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12 footer-col wow slideInUp text-align"
+            style="visibility: visible; animation-name: slideInUp;">
+            <img src="../../assets/images/footer/daily-logo-footer.png" alt="" class="img-responsive">
+            <div class="textwidget">
+              <p>
+                Hyundai An Phú - Đại lý ủy quyền chính thức của Hyundai Thành Công là địa điểm trưng bày các dòng xe mới
+                nhất của Hyundai.
+                <br>
+                <br>
+                Tọa lạc tại trung tâm Thành Phố Hồ Chí Minh với các Showroom chuẩn 1S, 2S hiện đại, cùng đội ngũ chuyên
+                viên tư vấn giàu kinh nghiệm.
+                <br>
+                <br>
+                Hyundai An Phú mang sứ mệnh phục vụ khách hàng trên Toàn quốc, giúp khách hàng có những trải nghiệm ấn
+                tượng về sản phẩm - dịch vụ cao cấp của chúng tôi.
+                <br>
+                <br>
+                Liên hệ ngay để được tư vấn và nhận các chương trình ưu đãi hấp dẫn
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 footer-col wow slideInUp"
+            style="visibility: visible; animation-name: slideInUp;">
+            <h5 class="footer-headings">Hình ảnh</h5>
+            <div class="top-line"></div>
+            <div class="footer-img">
+              <ul>
+                <li class="img-block">
+                  <img src="../../assets/images/footer/181218_Gioi-thieu-showroom.jpg" alt="" class="img-responsive">
+                  <a class="fancybox_gallery" rel="gallery1"
+                    href="../../assets/images/footer/181218_Gioi-thieu-showroom.jpg">
+                    <div class="overlay"><i class="fa fa-plus"></i></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 footer-col wow slideInUp"
+            style="visibility: visible; animation-name: slideInUp;">
+            <h5 class="footer-headings">Bài viết gần đây</h5>
+            <div class="top-line"></div>
+            <a href="" class="new-title">
+              <div class="col-xs-12">
+                <div class="col-xs-3">
+                  <img src="../../assets/images/footer/chuong-trinh-ra-han-bh.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="col-xs-9">
+                  <h2>
+                    <span>
+                      🚘 Chương trình ra hạn bảo hành “h...
+                    </span>
+                  </h2>
+                  <h3>17/04/2020</h3>
+                </div>
+              </div>
+            </a>
+            <a href="" class="new-title">
+              <div class="col-xs-12">
+                <div class="col-xs-3">
+                  <img src="../../assets/images/footer/khoi-sac-ROADSHOW.jpeg" alt="" class="img-responsive">
+                </div>
+                <div class="col-xs-9">
+                  <h2>
+                    <span>
+                      🔥 Khởi sắc roadshow tháng 06 tại h...
+                    </span>
+                  </h2>
+                  <h3>13/06/2020</h3>
+                </div>
+              </div>
+            </a>
+            <a href="" class="new-title">
+              <div class="col-xs-12">
+                <div class="col-xs-3">
+                  <img src="../../assets/images/footer/don-xe-sang.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="col-xs-9">
+                  <h2>
+                    <span>
+                      🏆 Đón xe sang cùng huyndai an phú ...
+                    </span>
+                  </h2>
+                  <h3>12/06/2020</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 footer-col wow slideInUp"
+            style="visibility: visible; animation-name: slideInUp;">
+            <h5 class="footer-headings">Facebook</h5>
+            <div class="top-line"></div>
+            <iframe class="hidden-xs hidden-sm"
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhyundaianphu.mpcauto.vn%2F%3Fzdlink%3DUo9XRcHoRsba8ZeYOszjBcPXOsLYRszhBcjXT65kOI8i8cblSo8wUo9pOsXbRMLVTN9i8ZeYUc5iRoqoE3GuE38oCJKwN2zSBo8i8c5mS6ba8ZeYCZWqE3WoCZ4r8drz&amp;tabs=timeline&amp;width=290&amp;height=196&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=770224896517738"
+              width="290" height="196" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+              allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <img src="../../assets/images/footer/icon-market.svg" alt="" class="img-responsive">
+            <p class="col-xs-10"> Showroom 2S: 1052 Nguyễn Văn Linh, P.Tân Phong, Quận 7, TP.HCM</p>
+          </div>
+          <div class="col-xs-4">
+            <img src="../../assets/images/footer/icon-market.svg" alt="" class="img-responsive">
+            <p class="col-xs-10"> Showroom 1S: 5A Nguyễn Thị Minh Khai, P.Bến Nghé, Quận 1, TP.HCM</p>
+          </div>
+          <div class="col-xs-4">
+            <img src="../../assets/images/footer/icon-contact.svg" alt="" class="img-responsive">
+            <a href="mailto:info@anphuhyundai.com.vn">
+              <p class="col-xs-10"> info@anphuhyundai.com.vn</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-headings container">
+        Copyright ©idocNet 2018
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="../../assets/scripts/menu-mobile.js"></script>
+
+</html>

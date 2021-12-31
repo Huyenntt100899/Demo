@@ -1,0 +1,97 @@
+@import "./colors";
+@import "./fonts";
+@import "./constants";
+
+html,
+body {
+  font-family: "ModernHEcoLight";
+  width: 100%;
+  font: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.modernHBold {
+  font-family: ChakraPetchMedium;
+}
+
+.modernHEcoLight {
+  font-family: ChakraPetchRegular;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 1.8;
+  font-family: modernHBold !important;
+}
+
+ul li,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  font-family: ModernHBold;
+
+  &:hover {
+    text-decoration: none;
+    color: #1d5fcb;
+  }
+}
+
+// .container {
+//   // padding: 0;
+//   // @media screen and (min-width: $minlg) {
+//   //   padding: 0;
+//   //   width: 970px;
+//   // }
+// }
+
+.text-align {
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.btn {
+  border-radius: 0px;
+  font-size: 18px;
+}
+
+.initiatory {
+  padding: 20px 0;
+
+  .text-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #034983;
+    text-transform: uppercase;
+    font-family: ModernHBold;
+  }
+
+  hr {
+    width: 30px;
+    border-top: 3px solid #034983;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .text-content {
+    font-size: 18px;
+    font-family: ModernHEcoLight;
+  }
+}
